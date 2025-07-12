@@ -32,7 +32,7 @@ body{
 }
 
 .music-Player{
-    background-color:yellow ;
+    background-color: #121212;
     position: fixed;
     bottom: 0;
     height: 72px;
@@ -85,10 +85,12 @@ a{
 .lib-option img{
     height: 1.25rem;
     width: 1.5rem;
+    
 }
 .icons{
     font-size: 1.25rem;
     display: flex;
+    cursor: pointer;
 }
 .icons i{
     opacity: 0.7;
@@ -140,6 +142,7 @@ a{
 .sticky-nav-icons{
     margin-left: 0.75rem;
     opacity: 0.7;
+    cursor: pointer;
 }
 .sticky-nav-icons:hover{
     opacity: 1;
@@ -150,9 +153,11 @@ a{
     justify-content: center;
     align-items: center;
     margin-left: 2rem;
+    cursor: pointer;
 }
 .nav-items{
     margin-right: 1rem;
+    cursor: pointer;
 }
 .dark-icon{
   background-color: black;
@@ -172,14 +177,19 @@ a{
     padding: 1rem;
     margin-left: 1.5rem;
     margin-top: 1rem;
+    cursor: pointer;
+    
+
 }
 .card-contaner{
     display: flex;
     margin-top: 1rem;
     flex-wrap: wrap;
+    
 }
 .card-contaner-heading{
     margin-top: 1rem;
+    margin-bottom: 1rem;
     
 }
 .card-contaner-heading:hover{
@@ -208,4 +218,188 @@ a{
     height: 30%;
     border-top: 1px solid white;
     opacity: 0.4;
+}
+ .music-Player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+   
+
+ }
+.album{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.album-title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+     font-weight: 600;
+     margin-top: 1rem;
+}
+.album-description{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+    font-size: 0.67rem;
+
+
+}
+.album-details span{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+.album-title:hover{
+    text-decoration: underline;
+}
+.album-description:hover{
+    text-decoration: underline;
+}
+.love-icon {
+    font-size: 1.2rem;
+    width: 56px;
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+.love-icon:hover{
+    opacity: 1;
+}
+.love-icon i{
+    display: flex;
+    margin: 0.5rem;
+    justify-content: center;
+}
+
+
+
+
+.music-control{
+    width: 50%;
+  
+ 
+}
+.player-control{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+    
+}
+.player-control-icon{
+    
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+.play-push {
+  height: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.play-push:hover {
+  transform: scale(1.2);
+}
+
+.playback-bar{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    padding: 5px 0;
+
+}
+.progress-bar {
+  appearance: none;
+  width: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  
+}
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.3rem;
+
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+
+.controls{
+    width: 25%;
+    height: 100%;
+    margin-right: 1rem;
+   
+}
+.control-icons{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+}
+.control-icons img{
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+.control-icons img:hover{
+    opacity: 1;
+}
+
+.playback-bar-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 50%;
+    padding: 5px 0;
+
+
+}
+.progress-bar-2 {
+  appearance: none;
+  width: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  
+}
+.progress-bar-2::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.3rem;
+
+}
+.progress-bar-2::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
 }
